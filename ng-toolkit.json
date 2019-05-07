@@ -1,0 +1,17 @@
+{
+  "universal": {
+    "skipInstall": false,
+    "directory": ".",
+    "project": "trader-tools"
+  },
+  "serverless": {
+    "provider": "aws",
+    "skipInstall": false,
+    "directory": ".",
+    "project": "trader-tools",
+    "serverless": {
+      "aws": {},
+      "gcloud": {}
+    }
+  }
+}

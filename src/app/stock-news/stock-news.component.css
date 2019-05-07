@@ -1,0 +1,23 @@
+.form{
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 1%;
+}
+
+.form-field {
+    margin-top: 2%;
+    width: 400px;
+  }
+  .example-header-image {
+    background-size: cover;
+  }
+#news-storage{
+    margin-top: 5%;
+    display: flex;
+
+}
+.news-cards{
+    margin-left: 3%;
+    max-height: 100%;
+    max-width: 400px;
+}

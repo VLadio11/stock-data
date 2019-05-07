@@ -1,0 +1,177 @@
+<mat-card class="form">
+<div class="input">
+<mat-form-field class="form-field">
+  <input matInput type="text" placeholder="Symbol:" [(ngModel)]="value"  (click)="symbol=''" >
+  <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-form-field>
+  <button mat-raised-button color="primary" id="build-links" (click)="setSymbol()">Build Links</button>
+  <button mat-raised-button id="clear-links" (click)="clearLinks()">Clear Links</button>
+</div>
+</mat-card>
+<mat-card *ngIf="linkBuildState === true" class="currentSymbol">
+    <mat-card-content>
+      <p>
+       Current symbol: {{symbol}} (Select various cards to be redirected to that URL)
+      </p>
+    </mat-card-content>
+  </mat-card>
+  
+  <div class="first-row">
+  <div id="finance">
+    <mat-card class="news-card">
+      <mat-card-content>
+        <p>
+          Yahoo Finance
+        </p>
+      </mat-card-content>
+      <img mat-card-image src="https://s3-us-west-2.amazonaws.com/www.tradernewslink.com/yahoo1.PNG" id="image">
+      <mat-card-actions>
+        <a mat-button id="goto-button" target="_blank" href="https://finance.yahoo.com/{{finance}}">Go to: Yahoo Finance</a>
+      </mat-card-actions>
+    </mat-card>  
+  </div>
+
+  <div id="stocktwits">
+    <mat-card class="news-card">
+      <mat-card-content>
+        <p>
+          StockTwits
+        </p>
+      </mat-card-content>
+      <img mat-card-image src="https://s3-us-west-2.amazonaws.com/www.tradernewslink.com/stocktwits1.PNG" id="image">
+      <mat-card-actions>
+        <a mat-button target="_blank" href="https://stocktwits.com/{{stockTwits}}">Go to: StockTwits</a>
+      </mat-card-actions>
+    </mat-card>  
+  </div>
+  
+  <div id = "finviz">
+    <mat-card class="news-card">
+      <mat-card-content>
+        <p>
+          FinViz
+        </p>
+      </mat-card-content>
+      <img mat-card-image src="https://s3-us-west-2.amazonaws.com/www.tradernewslink.com/finviz1.PNG" id="image">
+      <mat-card-actions>
+        <a mat-button target="_blank" href="https://finviz.com/{{finViz}}">Go to: FinViz</a>
+      </mat-card-actions>
+    </mat-card>  
+  </div>
+</div>
+
+<div class="second-row">
+  <div id = "marketwatch">
+    <mat-card class="news-card">
+      <mat-card-content>
+        <p>
+          MarketWatch
+        </p>
+      </mat-card-content>
+      <img mat-card-image src="https://s3-us-west-2.amazonaws.com/www.tradernewslink.com/marketwatch1.PNG" id="image">
+      <mat-card-actions>
+        <a mat-button target="_blank" href="https://www.marketwatch.com/investing/{{marketWatch}}" >Go to: MarketWatch</a>
+      </mat-card-actions>
+    </mat-card>  
+  </div>
+  
+  <div id="stockcharts">
+    <mat-card class="news-card">
+      <mat-card-content>
+        <p>
+          StockCharts
+        </p>
+      </mat-card-content>
+      <img mat-card-image src="https://s3-us-west-2.amazonaws.com/www.tradernewslink.com/stockcharts1.PNG" id="image">
+      <mat-card-actions>
+        <a mat-button target="_blank" href="https://stockcharts.com/{{stockCharts}}" >Go to: StockCharts</a>
+      </mat-card-actions>
+    </mat-card>  
+  </div>
+  
+
+  <div id="stockfetcher">
+    <mat-card class="news-card">
+      <mat-card-content>
+        <p>
+          StockFetcher
+        </p>
+      </mat-card-content>
+      <img mat-card-image src="https://s3-us-west-2.amazonaws.com/www.tradernewslink.com/stockfetcher1.PNG" id="image">
+      <mat-card-actions>
+        <a mat-button target="_blank" href="https://stockfetcher.com/{{stockFetcher}}" >Go to: StockFetcher</a>
+      </mat-card-actions>
+    </mat-card>  
+  </div>
+
+</div>
+<div class="third-row">
+  <div id="tradingview">
+    <mat-card class="news-card">
+      <mat-card-content>
+        <p>
+          Trading View
+        </p>
+      </mat-card-content>
+      <img mat-card-image src="https://s3-us-west-2.amazonaws.com/www.tradernewslink.com/tradingview.png" id="image">
+      <mat-card-actions>
+        <a mat-button target="_blank" href="https://www.tradingview.com/{{tradingView}}" >Go to: Trading View</a>
+      </mat-card-actions>
+    </mat-card>  
+  </div>
+  <div id="bigcharts">
+    <mat-card class="news-card">
+      <mat-card-content>
+        <p>
+          Big Charts
+        </p>
+      </mat-card-content>
+      <img mat-card-image src="https://s3-us-west-2.amazonaws.com/www.tradernewslink.com/big_charts1.PNG" id="image">
+      <mat-card-actions>
+        <a mat-button target="_blank" href="http://bigcharts.marketwatch.com/{{bigCharts}}" >Go to: Big Charts</a>
+      </mat-card-actions>
+    </mat-card>  
+  </div>
+  
+  <div id="whalewisdom">
+    <mat-card class="news-card">
+      <mat-card-content>
+        <p>
+          Whale Wisdom
+        </p>
+      </mat-card-content>
+      <img mat-card-image src="https://s3-us-west-2.amazonaws.com/www.tradernewslink.com/whale_wisdom.PNG" id="image">
+      <mat-card-actions>
+        <a mat-button target="_blank" href="https://whalewisdom.com/{{whaleWisdom}}">Go to: Whale Wisdom</a>
+      </mat-card-actions>
+    </mat-card>  
+  </div>
+</div>
+
+<div id="chatroom-dropdown">
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                          (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+    <mat-panel-title>
+      Chatrooms talking about your stock:
+    </mat-panel-title>
+    <mat-panel-description>
+      Click panel to {{panelOpenState ? 'hide chatrooms' : 'view chatrooms'}}
+    </mat-panel-description>
+    </mat-expansion-panel-header>
+    <ul>
+      <a target="_blank" href="https://finance.yahoo.com/{{finance}}/community"> Yahoo Finance chatroom</a>
+    </ul>
+    <ul>
+      <a target="_blank" href="https://investorshub.advfn.com/boards/hubstocks.aspx"> Investors Hub (you will need to re-enter the symbol)</a>
+    </ul>
+    <ul>
+      <a target="_blank" href="https://stocktwits.com/{{stockTwits}}"> StockTwits</a>
+    </ul>
+  </mat-expansion-panel>
+</mat-accordion>
+</div>
+<app-news-link></app-news-link>

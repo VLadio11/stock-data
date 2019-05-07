@@ -1,0 +1,51 @@
+
+.input{
+    margin-left: 10%;
+}
+
+.form{
+    width: 35%;
+    margin-left: 30%;
+    margin-top: 1%;
+}
+
+.form-field {
+    margin-top: 2%;
+    width: 400px;
+  }
+
+ #searchButton{
+     margin-left: 4%;
+ } 
+
+  .example-header-image {
+    background-size: cover;
+  }
+#news-storage{
+    margin-top: 5%;
+    display: flex;
+
+}
+.news-cards{
+    margin-left: 3%;
+    max-height: 100%;
+    max-width: 400px;
+}
+.stock-ohlc{
+    margin-left: 18.75%;
+    height: 10%;
+}
+.card{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 15px;
+}
+.toolbar{
+    text-align: center;
+    font-weight: bold;
+}
+.warning-symbol{
+    margin-top: 20px;
+    width: 50%;
+    margin-left: 25%;
+}

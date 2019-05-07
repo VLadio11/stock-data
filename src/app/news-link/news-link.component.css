@@ -1,0 +1,28 @@
+
+  .first-row, .second-row, .third-row{
+    display: flex;
+    margin-left: 8.5%;
+    margin-top: 1%;
+  }
+
+  #fox, #cnn, #bloom, #bbc, #wsj, #business, #invest, #biz, #sky, #cnbc, #born, #real, #post, #fortune, #motley{
+    margin-left: 2%;
+    width: 300px;
+
+  }
+  
+  .news-card{
+      width: 50%;
+      margin-left: 8.5%;
+      height: 55%;
+  }
+
+  #biz-toolbar{
+    margin-top: 5%;
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  #finance_sources{
+    margin-left: 30%;
+  }

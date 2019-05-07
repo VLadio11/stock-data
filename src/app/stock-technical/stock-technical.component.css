@@ -1,0 +1,20 @@
+.company-symbol, .company-name, .realtime-price{
+    font-size: 90%;
+    max-width: 20%;
+    margin-top: .5%;
+    display: inline-block;
+}
+
+.company-symbol{
+    margin-left: .5%;
+}
+.company-name{
+    margin-left: 35%;
+}
+.realtime-price{
+    margin-left: .5%;
+}
+.name{
+    display:flex;
+    text-align: center;
+}

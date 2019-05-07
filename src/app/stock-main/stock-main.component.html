@@ -1,0 +1,49 @@
+<mat-card class="form">
+  <div class="input">
+    <mat-form-field class="form-field">
+     <input matInput type="text" placeholder="Symbol:" [(ngModel)]="value" (click)="symbol=''">
+     <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <mat-icon>close</mat-icon>
+     </button>
+     </mat-form-field>
+        <button mat-raised-button color="primary" id="searchButton" (click)="setSymbolMakeCall()">Search</button>
+  </div>
+</mat-card>
+
+<app-stock-technical *ngIf="flag"></app-stock-technical>
+<app-stock-chart *ngIf="flag"></app-stock-chart>
+
+<div  *ngIf="flag"> 
+  <mat-card class="card" color="primary"> 
+    <mat-card-content>
+      <p class="toolbar">
+        Technical Information
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<div  fxLayout="row" fxLayoutGap="2.5%">
+  <app-stock-ohlc *ngIf="flag" fxFlex="20"class="stock-ohlc"></app-stock-ohlc>
+  <app-stock-volume *ngIf="flag" fxFlex="20"></app-stock-volume>
+  <app-stock-shorts *ngIf="flag" fxFlex="20"></app-stock-shorts>
+</div>
+
+<app-stock-key-info *ngIf="flag"></app-stock-key-info>
+
+<div  *ngIf="flag"> 
+  <mat-card class="card" color="primary"> 
+    <mat-card-content>
+      <p class="toolbar">
+        News 
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<app-stock-news *ngIf="flag" ></app-stock-news>
+<div *ngIf="errorFlag">
+  <p>{{error}}</p>
+</div>
+
+<app-landing-page *ngIf="flag==false"></app-landing-page>

@@ -1,0 +1,58 @@
+.form-field {
+    margin-top: 2%;
+    width: 400px;
+  }
+
+  #build-links{
+      margin-left: 2%;
+  }
+  .input{
+      margin-left: 10%;
+  }
+
+
+  #finance, #stocktwits, #finviz, #marketwatch, #stockcharts, #stockfetcher, #tradingview, #bigcharts, #whalewisdom{
+    margin-left: 10%;
+    width: 300px;
+    font-weight: bold;
+  }
+
+  .news-card{
+    width: 70%;
+    margin-left: 30%;
+    font-weight: bold;
+}
+
+.first-row, .second-row, .third-row{
+    display: flex;
+    margin-left: 8.5%;
+    margin-top: 1%;
+  }
+  #chatroom-dropdown{
+      width: 85%;
+      margin-top: 10px;
+      margin-left: 10%;
+  }
+  #image{
+    background-size: cover;
+}
+#clear-links{
+    background-color: #ec407a;
+    margin-left: 1.5%;
+}
+.currentSymbol{
+    width: 30%;
+    margin-left: 35%;
+    font-weight: bold;
+    background-color: lightgrey;
+    color: black;
+    margin-top: .25%;
+}
+
+.form{
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 1%;
+}
+
+

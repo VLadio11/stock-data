@@ -1,0 +1,22 @@
+<script src="node_modules/chart.js/src/chart.js"></script>
+
+<mat-card class="card">
+  <mat-card-content>
+    <p class="volume">
+      Average vs Day Volume
+    </p>
+  </mat-card-content>
+</mat-card>
+
+<div class="chart-overlay">
+  <div class="chart">
+      <canvas baseChart
+              [datasets]="barChartData"
+              [labels]="barChartLabels"
+              [options]="barChartOptions"
+              [legend]="barChartLegend"
+              [chartType]="barChartType"
+              [colors]="chartColors">
+      </canvas>
+  </div>
+</div>

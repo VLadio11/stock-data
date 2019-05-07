@@ -1,0 +1,17 @@
+.chart{
+    width: 100%;
+    background-color: white;
+}
+.float, .ratio{
+    text-align: center;
+    font-weight: bold;
+}
+.short-float{
+    margin-top: 1%;
+    width: 45%;
+}
+.card{
+    margin-top: 3.5%;
+    margin-bottom: 2%;
+    background-color: #ec407a;
+}
